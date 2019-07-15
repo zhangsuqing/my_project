@@ -10,7 +10,6 @@ import loading from '@/utils/loading'
 import message from '@/utils/message'
 import httpRequest from '@/utils/httpRequest' // api: https://github.com/axios/axios
 
-import  '@/icons' 
 import { isAuth } from '@/utils'
 Vue.config.productionTip = false;
 Vue.use(VueCookie);

@@ -187,7 +187,6 @@ export default {
             this.disabledInput = true;
             // 修改
             getUserInfo(this.dataForm.id).then(response => {
-              debugger
               if (response.data && response.data.code === "200") {
                 var data = response.data.data;
                 this.dataForm.username = data.user.username;

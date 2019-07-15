@@ -71,7 +71,6 @@
 
 <script>
 import { treeDataTranslate } from "@/utils";
-import Icon from "@/icons";
 import {
   getParentMenuList,
   addMenu,
@@ -241,7 +240,6 @@ export default {
             }).then(response => {
               this.$loading.open();
               addMenu(this.dataForm).then(response => {
-                debugger
                 if (response.data.state == "true") {
                   let callback = () => {
                     this.visible = false;

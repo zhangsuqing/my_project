@@ -148,7 +148,6 @@ export default {
           this.disabledInput = true;
           getRoleInfo(this.dataForm.id).then(response => {
             if (response.data && response.data.code === "200") {
-              debugger
               var data = response.data.data;
               this.dataForm.remark = data.role.remark;
               this.dataForm.roleName = data.role.roleName;
@@ -156,7 +155,6 @@ export default {
               if (idx !== -1) {
                 data.role.menuIdList.splice(idx, data.menuList - idx)
               }
-              debugger
               this.$refs.menuListTree.setCheckedKeys(data.menuList);
             }
           });

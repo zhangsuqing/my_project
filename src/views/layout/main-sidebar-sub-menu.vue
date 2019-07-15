@@ -4,7 +4,8 @@
     :index="menu.menuId + ''"
     :popper-class="'site-sidebar--' + sidebarLayoutSkin + '-popper'">
     <template slot="title">
-      <icon-svg :name="menu.icon || ''" class="site-sidebar__menu-icon"></icon-svg>
+      <!-- <icon-svg :name="menu.icon || ''" class="site-sidebar__menu-icon"></icon-svg> -->
+      <i class="el-icon-setting"></i>
       <span>{{ menu.name }}</span>
     </template>
     <sub-menu
@@ -15,14 +16,14 @@
     </sub-menu>
   </el-submenu>
   <el-menu-item v-else :index="menu.menuId + ''" @click="gotoRouteHandle(menu)">
-    <icon-svg :name="menu.icon || ''" class="site-sidebar__menu-icon"></icon-svg>
+    <!-- <icon-svg :name="menu.icon || ''" class="site-sidebar__menu-icon"></icon-svg> -->
+    <i class="el-icon-menu"></i>
     <span>{{ menu.name }}</span>
   </el-menu-item>
 </template>
 
 <script>
   import SubMenu from './main-sidebar-sub-menu'
-  import '@/icons'
   export default {
     name: 'sub-menu',
     props: {
