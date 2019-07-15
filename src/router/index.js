@@ -7,7 +7,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import http from '@/utils/httpRequest'
-import '@/icons' 
 import {
   isURL
 } from '@/utils/validate'
